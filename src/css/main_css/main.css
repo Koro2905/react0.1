@@ -1,0 +1,172 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: 1fr;
+  gap: 0px;
+  grid-template-areas: "users chats";
+  background: rgb(95, 95, 95);
+  
+}
+
+.users-container {
+  padding: 10px;
+}
+
+.users {
+  grid-area: users;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+.user {
+  width: 100%;
+  background: rgb(129, 129, 129);
+  display: flex;
+  margin: 1px;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  transition: background 0.3s ease; 
+
+  &:hover {
+    background: rgb(117, 117, 117);
+  }
+
+  &:active {
+    background: rgb(97, 97, 97);
+    box-shadow: inset 0px 0px 10px black;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nick {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+
+.chats {
+  grid-area: chats;
+  padding: 20px;
+  background: rgb(80, 80, 80);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  max-height: 400px;
+  scroll-behavior: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgb(80, 80, 80);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(128, 128, 128);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgb(61, 61, 61);
+  }
+
+}
+
+.chat {
+  
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgb(100, 100, 100);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chat_message {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.nick {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(220, 220, 220);
+}
+
+.message {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  &::before {
+    content: "  ";
+  }
+
+}
+
+
+.active-link .user {
+  background: rgb(80, 80, 80); 
+  box-shadow: inset 0px 0px 10px black;
+}
+
+.active-link .nick {
+  color: rgb(200, 200, 200); 
+}
+
+.massage_sand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.massage_sand input {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+
+.massage_sand button {
+  padding: 10px 20px;
+  background-color: rgb(70, 130, 180);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.massage_sand button:hover {
+  background-color: rgb(100, 149, 237);
+}
+
+.massage_sand button:active {
+  background-color: rgb(65, 105, 225);
+  box-shadow: inset 0px 0px 5px black;
+}

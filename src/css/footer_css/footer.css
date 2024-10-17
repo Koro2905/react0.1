@@ -1,0 +1,86 @@
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(66, 66, 66);
+    border-radius: 0px 0px 10px 10px;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    .name_and_phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  
+      .name {
+        color: white;
+        font-size: 1.5rem;
+      }
+      .phone {
+        color: white;
+        font-size: 0.7rem;
+      }
+    }
+  }
+  
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .chat_your_and_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 5px 20px;
+    
+    }
+    .chat_your {
+      background: rgb(102, 86, 86);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      position: relative;
+      
+  }
+  .x_icon {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);   
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
